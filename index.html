@@ -34,31 +34,34 @@
       </select>
       <br>
       <br>
-      <label for="month"><b>Month</b></label>
-      <select id="month">
-        <option value="">Please select a month </option>
-        <option value="january"> January </option>
-        <option value="february"> February </option>
-        <option value="march">March </option>
-        <option value="april">April </option>
-        <option value="may">May </option>
-        <option value="june">June </option>
-        <option value="july">July </option>
-        <option value="august">August </option>
-        <option value="september">September </option>
-        <option value="october">October </option>
-        <option value="november">November </option>
-        <option value="december">December </option>
-      </select>
+      <label for="month"><b>Please select a month</b></label>
+      <input type="month" placeholder="December" name="month" required>
 
       <br>
       <br>
       <label for="hours"><b>Monthly working hours</b></label>
-      <input type="text" placeholder="Hours" name="hours" required>
+      <input type="number" placeholder="Hours" name="hours" required>
+      <br>
+      <br>
+      <label for="type"><b>Employee type</b></label>
+      <form>
+        <input type="radio" name="type" value="r" checked> Regular
+        <input type="radio" name="type" value="f"> Faculty
+      </form>
+      <br>
+      <br>
+
+      <form>
+        <label for="code"><b>Faculty staff code: </b></label>
+        <input type="radio" name="code" value="m"> Master
+        <input type="radio" name="code" value="b"> Bachelor
+      </form>
+      <br>
+      <br>
+      <label for="fixedSalary"><b>Fixed Salary</b></label>
+      <input type="number" placeholder="Fixed salary" name="fixedSalary" min="0" >
       <hr>
-
-
-      <button type="submit" class="registerbtn">Register</button>
+      <button name="calcBtn">Calculate</button>
     </div>
 
 
