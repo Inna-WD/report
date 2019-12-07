@@ -21,7 +21,7 @@
       <br>
       <br>
       <label for="name"><b>Full Name</b></label>
-      <input type="text" placeholder="Full Name" name="name" >
+      <input type="text" placeholder="Full Name" id="name" >
       <br>
       <br>
       <label for="department"><b>Department</b></label>
@@ -51,6 +51,14 @@
       <br>
       <br>
 
+      <label>What is the employee type </label>
+      Adult<input type="radio" value="Yes" name="subscribe" id="a">
+      Child<input type="radio" value="No" name="subscribe" id="c"> 
+
+
+
+
+
       <form>
         <label for="code"><b>Faculty staff code: </b></label>
         <input type="radio" name="code" id="code" value="m"> Master
@@ -58,13 +66,20 @@
       </form>
       <br>
       <br>
+
+
+
       <label for="fixedSalary"><b>Fixed Salary</b></label>
       <input type="number" placeholder="Fixed salary" name="fixedSalary" min="0">
       <hr>
-      <button id="calculate">Calculate</button>
+
+
+      <input type="button" id="calculate" value="Calculate">
+      <input type="reset" value="Clear Form">
     </div>
     <p id="demo"></p>
   </form>
+
 
 
 
