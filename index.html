@@ -17,11 +17,11 @@
       <hr>
 
       <label for="number"><b>Employee number</b></label>
-      <input type="text" placeholder="N followed by 7 digits" name="number" required>
+      <input type="text" placeholder="N followed by 7 digits" name="number" >
       <br>
       <br>
       <label for="name"><b>Full Name</b></label>
-      <input type="text" placeholder="Full Name" name="name" required>
+      <input type="text" placeholder="Full Name" name="name" >
       <br>
       <br>
       <label for="department"><b>Department</b></label>
@@ -35,51 +35,39 @@
       <br>
       <br>
       <label for="month"><b>Please select a month</b></label>
-      <input type="month" placeholder="December" name="month" required>
+      <input type="month" placeholder="December" name="month" >
 
       <br>
       <br>
       <label for="hours"><b>Monthly working hours</b></label>
-      <input type="number" placeholder="Hours" name="hours" required>
+      <input type="number" placeholder="Hours" name="hours" >
       <br>
       <br>
       <label for="type"><b>Employee type</b></label>
       <form>
-        <input type="radio" name="type" value="r" checked> Regular
-        <input type="radio" name="type" value="f"> Faculty
+        <input type="radio" name="type" id="type" value="r"> Regular
+        <input type="radio" name="type" id="type" value="f"> Faculty
       </form>
       <br>
       <br>
 
       <form>
         <label for="code"><b>Faculty staff code: </b></label>
-        <input type="radio" name="code" value="m"> Master
-        <input type="radio" name="code" value="b"> Bachelor
+        <input type="radio" name="code" id="code" value="m"> Master
+        <input type="radio" name="code" id="code" value="b"> Bachelor
       </form>
       <br>
       <br>
       <label for="fixedSalary"><b>Fixed Salary</b></label>
-      <input type="number" placeholder="Fixed salary" name="fixedSalary" min="0" >
+      <input type="number" placeholder="Fixed salary" name="fixedSalary" min="0">
       <hr>
-      <button name="calcBtn">Calculate</button>
+      <button id="calculate">Calculate</button>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <p id="demo"></p>
   </form>
 
-  <script src="script.js"></script>
-</body>
 
+
+<script src="script.js"></script>
+</body>
 </html>
