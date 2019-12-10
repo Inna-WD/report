@@ -2,37 +2,37 @@
 
 
 let calculate = document.getElementById("calculate");
-let type = document.getElementsByName("type").value;
-let code = document.getElementsByName("code").value;
-let fixedSalary = document.getElementsByName("fixedSalary").value;
-let hours = document.getElementsByName("hours").value;
+let code = document.getElementsByName("code");
+// let fff=document.getElementsByName("subscribe");
+// console.log(fff);
 
-
-console.log(type);
-console.log(hours);
 
 function clerkInterface() {
 
-    var grossSalary = 0;
-    // var txt;
-    // var type = "r";
-    // for (var i = 0; i < typeElements.length; i++) {
-    //     if (typeElements[i].checked) {
-    //         type = type.Elements[i].value;
-    //         break;
-    //     }
-    // }
+    let typeElements = document.getElementsByName("type");
+    let fixedSalary = Number(document.getElementById("fixedSalary").value);
+    let hours = Number(document.getElementById("hours").value);
+    let grossSalary = 0;
+    let txt;
+    type = "";
 
-
+    for (let i = 0; i < typeElements.length; i++) {
+        if (typeElements[i].checked) {
+            type = typeElements[i].value;
+            break;
+        };
+    }
 
     if (type === "r") {
         if (hours === 160) {
             grossSalary = fixedSalary;
+
         } else if (hours < 160) {
             grossSalary = hours * fixedSalary / 160;
         } else {
             grossSalary = fixedSalary + (hours - 160) * 2 * fixedSalary / 160;
         }
+        
     }
     // else {
     // }
@@ -42,13 +42,6 @@ function clerkInterface() {
 
 
 calculate.addEventListener(`click`, clerkInterface)
-
-
-
-
-
-
-
 
 
 

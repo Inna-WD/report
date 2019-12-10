@@ -15,16 +15,16 @@
       <h1>Payroll calculation interface</h1>
       <p>Please fill in this form to calculate the monthly net salary for employee.</p>
       <hr>
-     
-      <strong>Employee number</strong>
-      <input type="text" placeholder="N followed by 7 digits" name="number" id="number">
+
+      <label for="number"><b>Employee number</b></label>
+      <input type="text" placeholder="N followed by 7 digits" name="number" >
       <br>
       <br>
-      <strong>Full Name</strong>
-      <input type="text" placeholder="Full Name" name="name" id="name">
+      <label for="name"><b>Full Name</b></label>
+      <input type="text" placeholder="Full Name" id="name" >
       <br>
       <br>
-      <strong>Department</strong>
+      <label for="department"><b>Department</b></label>
       <select id="department">
         <option value="">Please select a department </option>
         <option value="media"> Media and Digital Arts </option>
@@ -34,22 +34,29 @@
       </select>
       <br>
       <br>
-      <strong>Month of payroll</strong>
-      <input type="month" placeholder="December" name="month">
+      <label for="month"><b>Please select a month</b></label>
+      <input type="month" placeholder="December" name="month" >
 
       <br>
       <br>
-      <strong>Monthly working hours</strong>
-      <input type="number" placeholder="Hours" name="hours" id="hours">
+      <label for="hours"><b>Monthly working hours</b></label>
+      <input type="number" placeholder="Hours" name="hours" id="hours" >
       <br>
       <br>
+      <label for="type"><b>Employee type</b></label>
       <form>
-        <label for="type"><b>Employee type</b></label>
         <input type="radio" name="type" id="type" value="r"> Regular
         <input type="radio" name="type" id="type" value="f"> Faculty
       </form>
       <br>
       <br>
+
+      <label>What is the employee type </label>
+      Adult<input type="radio" value="Yes" name="subscribe" id="a">
+      Child<input type="radio" value="No" name="subscribe" id="c">
+
+
+
 
 
       <form>
@@ -61,21 +68,19 @@
       <br>
 
 
+
       <label for="fixedSalary"><b>Fixed Salary</b></label>
-      <input type="number" placeholder="Fixed salary" name="fixedSalary" min="0" id = "fixedSalary">
+      <input type="number" placeholder="Fixed salary" name="fixedSalary" min="0" id="fixedSalary">
       <hr>
 
 
       <input type="button" id="calculate" value="Calculate">
       <input type="reset" value="Clear Form">
     </div>
-
+    <p id="demo"></p>
   </form>
 
-<p id="demo"></p>
 
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
-
 </html>
