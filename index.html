@@ -17,7 +17,7 @@
       <hr>
 
       <label for="number"><b>Employee number</b></label>
-      <input type="text" placeholder="N followed by 7 digits" name="number" >
+      <input type="text" placeholder="N followed by 7 digits" id="number" >
       <br>
       <br>
       <label for="name"><b>Full Name</b></label>
@@ -51,14 +51,6 @@
       <br>
       <br>
 
-      <label>What is the employee type </label>
-      Adult<input type="radio" value="Yes" name="subscribe" id="a">
-      Child<input type="radio" value="No" name="subscribe" id="c">
-
-
-
-
-
       <form>
         <label for="code"><b>Faculty staff code: </b></label>
         <input type="radio" name="code" id="code" value="m"> Master
@@ -77,9 +69,18 @@
       <input type="button" id="calculate" value="Calculate">
       <input type="reset" value="Clear Form">
     </div>
-    <p id="demo"></p>
+
   </form>
 
+
+<!-- ouput form  -->
+
+
+<p>Report form for the:</p>
+<p id="n"></p>
+<p id="gs"></p>
+<br>
+<p id="tax"></p>
 
 <script src="script.js"></script>
 </body>
